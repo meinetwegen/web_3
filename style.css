@@ -1,0 +1,41 @@
+.vet-services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.vet-card {
+    background: #ffffff;
+    border: 2px solid #d1e7dd;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.95rem;
+    transition: transform 0.3s ease;
+}
+
+.vet-card:hover {
+    transform: translateY(-5px);
+}
+
+@media (min-width: 576px) {
+    .vet-services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .vet-card {
+        font-size: 1.05rem; 
+    }
+}
+
+@media (min-width: 992px) {
+    .vet-services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .vet-card {
+        background: #f0fdf4; 
+        font-size: 1.1rem;
+    }
+}
